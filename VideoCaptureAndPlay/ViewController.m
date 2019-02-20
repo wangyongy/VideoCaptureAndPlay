@@ -8,7 +8,6 @@
 
 #import "ViewController.h"
 #import <Photos/Photos.h>
-#import <AssetsLibrary/AssetsLibrary.h>
 #import "CaptureManager.h"
 #define kScreenWidth [UIScreen mainScreen].bounds.size.width
 #define kScreenHeight [UIScreen mainScreen].bounds.size.height
@@ -125,51 +124,12 @@
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.3f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         
+        [weakSelf saveVideo];
+        
         [weakSelf previewVideoAfterShoot];
-        
-        [self saveVideo];
-        
     });
 }
-/**
- *  预览录制的视频
- */
-- (void)previewVideoAfterShoot
-{
-    if (self.videoURL == nil || self.videoPreviewContainerView != nil)
-    {
-        return;
-    }
-    
-    AVURLAsset *asset = [AVURLAsset assetWithURL:self.videoURL];
-    
-    // 初始化AVPlayer
-    self.videoPreviewContainerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight)];
-    
-    self.videoPreviewContainerView.backgroundColor = [UIColor blackColor];
-    
-    AVPlayerItem * playerItem = [AVPlayerItem playerItemWithAsset:asset];
-    
-    self.player = [[AVPlayer alloc] initWithPlayerItem:playerItem];
-    
-    AVPlayerLayer *playerLayer = [AVPlayerLayer playerLayerWithPlayer:self.player];
-    
-    playerLayer.frame = CGRectMake(0, 0, kScreenWidth, kScreenHeight);
-    
-    playerLayer.videoGravity = AVLayerVideoGravityResizeAspect;
-    
-    [self.videoPreviewContainerView.layer addSublayer:playerLayer];
-    
-    // 其余UI布局设置
-    [self.view addSubview:self.videoPreviewContainerView];
-    [self.view bringSubviewToFront:self.videoPreviewContainerView];
-    
-    // 重复播放预览视频
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(playVideoFinished:) name:AVPlayerItemDidPlayToEndTimeNotification object:playerItem];
-    
-    // 开始播放
-    [self.player play];
-}
+
 /**
  *  设置写入视频属性
  */
@@ -317,6 +277,47 @@
     
     return destDateString;
 }
+#pragma mark - 视频播放和保存
+/**
+ *  预览录制的视频
+ */
+- (void)previewVideoAfterShoot
+{
+    if (self.videoURL == nil || self.videoPreviewContainerView != nil)
+    {
+        return;
+    }
+    
+    AVURLAsset *asset = [AVURLAsset assetWithURL:self.videoURL];
+    
+    // 初始化AVPlayer
+    self.videoPreviewContainerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight)];
+    
+    self.videoPreviewContainerView.backgroundColor = [UIColor blackColor];
+    
+    AVPlayerItem * playerItem = [AVPlayerItem playerItemWithAsset:asset];
+    
+    self.player = [[AVPlayer alloc] initWithPlayerItem:playerItem];
+    
+    AVPlayerLayer *playerLayer = [AVPlayerLayer playerLayerWithPlayer:self.player];
+    
+    playerLayer.frame = CGRectMake(0, 0, kScreenWidth, kScreenHeight);
+    
+    playerLayer.videoGravity = AVLayerVideoGravityResizeAspect;
+    
+    [self.videoPreviewContainerView.layer addSublayer:playerLayer];
+    
+    // 其余UI布局设置
+    [self.view addSubview:self.videoPreviewContainerView];
+    [self.view bringSubviewToFront:self.videoPreviewContainerView];
+    
+    // 重复播放预览视频
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(playVideoFinished:) name:AVPlayerItemDidPlayToEndTimeNotification object:playerItem];
+    
+    // 开始播放
+    [self.player play];
+}
+
 
 /**
  结束播放
@@ -431,8 +432,8 @@
         }
     }];
 }
+#pragma mark -
 #pragma mark - 预览视频通知
-
 -(void)removePlayerItemNotification
 {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
