@@ -1,0 +1,590 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CFAF48A8221CF59600FD31CC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CFAF48A7221CF59600FD31CC /* AppDelegate.m */; };
+		CFAF48AB221CF59600FD31CC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFAF48AA221CF59600FD31CC /* ViewController.m */; };
+		CFAF48AE221CF59600FD31CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFAF48AC221CF59600FD31CC /* Main.storyboard */; };
+		CFAF48B0221CF59700FD31CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFAF48AF221CF59700FD31CC /* Assets.xcassets */; };
+		CFAF48B3221CF59700FD31CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFAF48B1221CF59700FD31CC /* LaunchScreen.storyboard */; };
+		CFAF48B6221CF59700FD31CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CFAF48B5221CF59700FD31CC /* main.m */; };
+		CFAF48C0221CF59700FD31CC /* VideoCaptureAndPlayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CFAF48BF221CF59700FD31CC /* VideoCaptureAndPlayTests.m */; };
+		CFAF48CB221CF59700FD31CC /* VideoCaptureAndPlayUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CFAF48CA221CF59700FD31CC /* VideoCaptureAndPlayUITests.m */; };
+		CFAF48DA221CF5F500FD31CC /* CaptureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CFAF48D9221CF5F500FD31CC /* CaptureManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CFAF48BC221CF59700FD31CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFAF489B221CF59600FD31CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CFAF48A2221CF59600FD31CC;
+			remoteInfo = VideoCaptureAndPlay;
+		};
+		CFAF48C7221CF59700FD31CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFAF489B221CF59600FD31CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CFAF48A2221CF59600FD31CC;
+			remoteInfo = VideoCaptureAndPlay;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CFAF48A3221CF59600FD31CC /* VideoCaptureAndPlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoCaptureAndPlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFAF48A6221CF59600FD31CC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CFAF48A7221CF59600FD31CC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CFAF48A9221CF59600FD31CC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CFAF48AA221CF59600FD31CC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CFAF48AD221CF59600FD31CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CFAF48AF221CF59700FD31CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CFAF48B2221CF59700FD31CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CFAF48B4221CF59700FD31CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFAF48B5221CF59700FD31CC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CFAF48BB221CF59700FD31CC /* VideoCaptureAndPlayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VideoCaptureAndPlayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFAF48BF221CF59700FD31CC /* VideoCaptureAndPlayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoCaptureAndPlayTests.m; sourceTree = "<group>"; };
+		CFAF48C1221CF59700FD31CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFAF48C6221CF59700FD31CC /* VideoCaptureAndPlayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VideoCaptureAndPlayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFAF48CA221CF59700FD31CC /* VideoCaptureAndPlayUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoCaptureAndPlayUITests.m; sourceTree = "<group>"; };
+		CFAF48CC221CF59700FD31CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFAF48D8221CF5F500FD31CC /* CaptureManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaptureManager.h; sourceTree = "<group>"; };
+		CFAF48D9221CF5F500FD31CC /* CaptureManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaptureManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CFAF48A0221CF59600FD31CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFAF48B8221CF59700FD31CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFAF48C3221CF59700FD31CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CFAF489A221CF59600FD31CC = {
+			isa = PBXGroup;
+			children = (
+				CFAF48A5221CF59600FD31CC /* VideoCaptureAndPlay */,
+				CFAF48BE221CF59700FD31CC /* VideoCaptureAndPlayTests */,
+				CFAF48C9221CF59700FD31CC /* VideoCaptureAndPlayUITests */,
+				CFAF48A4221CF59600FD31CC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CFAF48A4221CF59600FD31CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CFAF48A3221CF59600FD31CC /* VideoCaptureAndPlay.app */,
+				CFAF48BB221CF59700FD31CC /* VideoCaptureAndPlayTests.xctest */,
+				CFAF48C6221CF59700FD31CC /* VideoCaptureAndPlayUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CFAF48A5221CF59600FD31CC /* VideoCaptureAndPlay */ = {
+			isa = PBXGroup;
+			children = (
+				CFAF48A6221CF59600FD31CC /* AppDelegate.h */,
+				CFAF48A7221CF59600FD31CC /* AppDelegate.m */,
+				CFAF48A9221CF59600FD31CC /* ViewController.h */,
+				CFAF48AA221CF59600FD31CC /* ViewController.m */,
+				CFAF48D8221CF5F500FD31CC /* CaptureManager.h */,
+				CFAF48D9221CF5F500FD31CC /* CaptureManager.m */,
+				CFAF48AC221CF59600FD31CC /* Main.storyboard */,
+				CFAF48AF221CF59700FD31CC /* Assets.xcassets */,
+				CFAF48B1221CF59700FD31CC /* LaunchScreen.storyboard */,
+				CFAF48B4221CF59700FD31CC /* Info.plist */,
+				CFAF48B5221CF59700FD31CC /* main.m */,
+			);
+			path = VideoCaptureAndPlay;
+			sourceTree = "<group>";
+		};
+		CFAF48BE221CF59700FD31CC /* VideoCaptureAndPlayTests */ = {
+			isa = PBXGroup;
+			children = (
+				CFAF48BF221CF59700FD31CC /* VideoCaptureAndPlayTests.m */,
+				CFAF48C1221CF59700FD31CC /* Info.plist */,
+			);
+			path = VideoCaptureAndPlayTests;
+			sourceTree = "<group>";
+		};
+		CFAF48C9221CF59700FD31CC /* VideoCaptureAndPlayUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CFAF48CA221CF59700FD31CC /* VideoCaptureAndPlayUITests.m */,
+				CFAF48CC221CF59700FD31CC /* Info.plist */,
+			);
+			path = VideoCaptureAndPlayUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CFAF48A2221CF59600FD31CC /* VideoCaptureAndPlay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFAF48CF221CF59700FD31CC /* Build configuration list for PBXNativeTarget "VideoCaptureAndPlay" */;
+			buildPhases = (
+				CFAF489F221CF59600FD31CC /* Sources */,
+				CFAF48A0221CF59600FD31CC /* Frameworks */,
+				CFAF48A1221CF59600FD31CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VideoCaptureAndPlay;
+			productName = VideoCaptureAndPlay;
+			productReference = CFAF48A3221CF59600FD31CC /* VideoCaptureAndPlay.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CFAF48BA221CF59700FD31CC /* VideoCaptureAndPlayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFAF48D2221CF59700FD31CC /* Build configuration list for PBXNativeTarget "VideoCaptureAndPlayTests" */;
+			buildPhases = (
+				CFAF48B7221CF59700FD31CC /* Sources */,
+				CFAF48B8221CF59700FD31CC /* Frameworks */,
+				CFAF48B9221CF59700FD31CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CFAF48BD221CF59700FD31CC /* PBXTargetDependency */,
+			);
+			name = VideoCaptureAndPlayTests;
+			productName = VideoCaptureAndPlayTests;
+			productReference = CFAF48BB221CF59700FD31CC /* VideoCaptureAndPlayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CFAF48C5221CF59700FD31CC /* VideoCaptureAndPlayUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFAF48D5221CF59700FD31CC /* Build configuration list for PBXNativeTarget "VideoCaptureAndPlayUITests" */;
+			buildPhases = (
+				CFAF48C2221CF59700FD31CC /* Sources */,
+				CFAF48C3221CF59700FD31CC /* Frameworks */,
+				CFAF48C4221CF59700FD31CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CFAF48C8221CF59700FD31CC /* PBXTargetDependency */,
+			);
+			name = VideoCaptureAndPlayUITests;
+			productName = VideoCaptureAndPlayUITests;
+			productReference = CFAF48C6221CF59700FD31CC /* VideoCaptureAndPlayUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CFAF489B221CF59600FD31CC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "王勇";
+				TargetAttributes = {
+					CFAF48A2221CF59600FD31CC = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					CFAF48BA221CF59700FD31CC = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = CFAF48A2221CF59600FD31CC;
+					};
+					CFAF48C5221CF59700FD31CC = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = CFAF48A2221CF59600FD31CC;
+					};
+				};
+			};
+			buildConfigurationList = CFAF489E221CF59600FD31CC /* Build configuration list for PBXProject "VideoCaptureAndPlay" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CFAF489A221CF59600FD31CC;
+			productRefGroup = CFAF48A4221CF59600FD31CC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CFAF48A2221CF59600FD31CC /* VideoCaptureAndPlay */,
+				CFAF48BA221CF59700FD31CC /* VideoCaptureAndPlayTests */,
+				CFAF48C5221CF59700FD31CC /* VideoCaptureAndPlayUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CFAF48A1221CF59600FD31CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFAF48B3221CF59700FD31CC /* LaunchScreen.storyboard in Resources */,
+				CFAF48B0221CF59700FD31CC /* Assets.xcassets in Resources */,
+				CFAF48AE221CF59600FD31CC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFAF48B9221CF59700FD31CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFAF48C4221CF59700FD31CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CFAF489F221CF59600FD31CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFAF48AB221CF59600FD31CC /* ViewController.m in Sources */,
+				CFAF48B6221CF59700FD31CC /* main.m in Sources */,
+				CFAF48DA221CF5F500FD31CC /* CaptureManager.m in Sources */,
+				CFAF48A8221CF59600FD31CC /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFAF48B7221CF59700FD31CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFAF48C0221CF59700FD31CC /* VideoCaptureAndPlayTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFAF48C2221CF59700FD31CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFAF48CB221CF59700FD31CC /* VideoCaptureAndPlayUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CFAF48BD221CF59700FD31CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CFAF48A2221CF59600FD31CC /* VideoCaptureAndPlay */;
+			targetProxy = CFAF48BC221CF59700FD31CC /* PBXContainerItemProxy */;
+		};
+		CFAF48C8221CF59700FD31CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CFAF48A2221CF59600FD31CC /* VideoCaptureAndPlay */;
+			targetProxy = CFAF48C7221CF59700FD31CC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CFAF48AC221CF59600FD31CC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CFAF48AD221CF59600FD31CC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CFAF48B1221CF59700FD31CC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CFAF48B2221CF59700FD31CC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CFAF48CD221CF59700FD31CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CFAF48CE221CF59700FD31CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CFAF48D0221CF59700FD31CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3D5W4KF224;
+				INFOPLIST_FILE = VideoCaptureAndPlay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = wangyong.VideoCaptureAndPlay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CFAF48D1221CF59700FD31CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3D5W4KF224;
+				INFOPLIST_FILE = VideoCaptureAndPlay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = wangyong.VideoCaptureAndPlay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CFAF48D3221CF59700FD31CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3D5W4KF224;
+				INFOPLIST_FILE = VideoCaptureAndPlayTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = wangyong.VideoCaptureAndPlayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VideoCaptureAndPlay.app/VideoCaptureAndPlay";
+			};
+			name = Debug;
+		};
+		CFAF48D4221CF59700FD31CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3D5W4KF224;
+				INFOPLIST_FILE = VideoCaptureAndPlayTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = wangyong.VideoCaptureAndPlayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VideoCaptureAndPlay.app/VideoCaptureAndPlay";
+			};
+			name = Release;
+		};
+		CFAF48D6221CF59700FD31CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3D5W4KF224;
+				INFOPLIST_FILE = VideoCaptureAndPlayUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = wangyong.VideoCaptureAndPlayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VideoCaptureAndPlay;
+			};
+			name = Debug;
+		};
+		CFAF48D7221CF59700FD31CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3D5W4KF224;
+				INFOPLIST_FILE = VideoCaptureAndPlayUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = wangyong.VideoCaptureAndPlayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VideoCaptureAndPlay;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CFAF489E221CF59600FD31CC /* Build configuration list for PBXProject "VideoCaptureAndPlay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFAF48CD221CF59700FD31CC /* Debug */,
+				CFAF48CE221CF59700FD31CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFAF48CF221CF59700FD31CC /* Build configuration list for PBXNativeTarget "VideoCaptureAndPlay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFAF48D0221CF59700FD31CC /* Debug */,
+				CFAF48D1221CF59700FD31CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFAF48D2221CF59700FD31CC /* Build configuration list for PBXNativeTarget "VideoCaptureAndPlayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFAF48D3221CF59700FD31CC /* Debug */,
+				CFAF48D4221CF59700FD31CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFAF48D5221CF59700FD31CC /* Build configuration list for PBXNativeTarget "VideoCaptureAndPlayUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFAF48D6221CF59700FD31CC /* Debug */,
+				CFAF48D7221CF59700FD31CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CFAF489B221CF59600FD31CC /* Project object */;
+}
