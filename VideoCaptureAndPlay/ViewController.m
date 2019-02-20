@@ -21,16 +21,16 @@
 @property (nonatomic, strong) AVAssetWriterInput *assetWriterVideoInput;
 /**  写入音频输出  */
 @property (nonatomic, strong) AVAssetWriterInput *assetWriterAudioInput;
-/**  是否可以写入  */
-@property (nonatomic, assign) BOOL canWrite;
 /**  视频文件地址  */
 @property (strong, nonatomic) NSURL *videoURL;
 /**  视频预览View  */
 @property (strong, nonatomic) UIView *videoPreviewContainerView;
 /**  播放器  */
 @property (strong, nonatomic) AVPlayer *player;
-/**  AVFoundation采集音视频  */
+/**  采集音视频  */
 @property (nonatomic, strong) CaptureManager * captureManager;
+/**  是否可以写入  */
+@property (nonatomic, assign) BOOL canWrite;
 /**  是否开始录制  */
 @property(nonatomic,assign) BOOL isStart;
 
@@ -240,7 +240,7 @@
 
 /**
  创建视频文件路径
-
+ 
  @return 文件路径
  */
 - (NSString *)createVideoFilePath
